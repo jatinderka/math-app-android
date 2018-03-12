@@ -1,58 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:textAlignment="center"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:text="00:60"
-        android:textSize="20dp"
-        android:textAlignment="viewEnd"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewCountDown" />
-    <TextView
-        android:text="Score : "
-        android:textSize="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textScore" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Timer"
+            android:textSize="15dp"
+            android:id="@+id/textViewCountDown"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="Score : "
+            android:textSize="15dp"
+            android:id="@+id/textScore"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
     <TextView
         android:id="@+id/Num1"
         android:hint="Number1"
-        android:textSize="30dp"
-        android:layout_margin="30dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd" />
     <TextView
         android:id="@+id/Opr"
         android:hint="Operater"
-        android:textSize="30dp"
-        android:layout_margin="30dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/Num2"
         android:hint="Number2"
-        android:textSize="30dp"
-        android:layout_margin="30dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:id="@+id/Ans"
-        android:textSize="30dp"
-        android:hint="Put Answer over here"
-        android:layout_margin="30dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"/>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edResult"
+            android:textSize="20dp"
+            android:hint="Put Answer over here"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Check"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/butCheck" />
+    </LinearLayout>
     <Button
         android:text="Back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/butBack" />
-    <Button
-        android:text="Check"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/butCheck" />
 </LinearLayout>

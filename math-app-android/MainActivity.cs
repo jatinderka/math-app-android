@@ -8,9 +8,8 @@ namespace math_app_android
     [Activity(Label = "math_app_android", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        private static readonly long COUNTDOWN_IN_MILLS = 60000;
-        ////private CountDownTimer countdowntimer;
-        private long timeLeftInMills;
+      
+      
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -28,32 +27,7 @@ namespace math_app_android
 
 
         }
-        //private void StartDownCount()
-        //{
-        //    countdowntimer = new CountDownTimer(timeLeftInMills, 1000);
-        //}
-
-        //private void StartDownCount()
-        //{
-
-        //}
-        //protected virtual void onTick(long millsUntilFinished)
-        //{
-        //    TextView textView = FindViewById<TextView>(Resource.Id.textScore);
-        //    timeLeftInMills = millsUntilFinished;
-        //    if (COUNTDOWN_IN_MILLS > 0)
-        //    {
-        //        timeLeftInMills = timeLeftInMills - 1;
-
-        //        textView.Text = timeLeftInMills + " seconds";
-
-        //    }
-        //    else
-        //    {
-        //        textView.Text = "No time left";
-        //    }
-        //}
-
+        
 
     }
 
